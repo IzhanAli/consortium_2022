@@ -33,7 +33,7 @@ B = "./day2.png"
 # for i in names.keys():
 #     options.append(i)
 
-font = ImageFont.truetype("Poppins-Medium.ttf", 70)
+font = ImageFont.truetype("Poppins-Medium.ttf", 50)
 events = st.selectbox("Select", events_data.keys())
 name = st.selectbox(
     "Select your name for generating certificate", events_data[events])
@@ -48,7 +48,7 @@ d = ImageDraw.Draw(im)
 W, H = im.size
 w, h = d.textsize(name, font=font)
 print(w, h)
-d.text(((((W-w)/2) + 60, ((H - h)/2) + 85)),
+d.text(((((W-w)/2) + 50, ((H - h)/2) + 85)),
        name, fill=(56, 56, 56), font=font)
 if st.button("Get Certificate"):
     ioData = io.BytesIO()
