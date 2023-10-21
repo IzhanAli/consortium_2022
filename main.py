@@ -28,7 +28,7 @@ events_data = {
 #api = "https://api.npoint.io/0ac056978990354196e5"
 
 A = "./certificate.png"
-B = "./day2.png"
+B = "./workshop.png"
 # options = []
 # for i in names.keys():
 #     options.append(i)
@@ -48,7 +48,7 @@ d = ImageDraw.Draw(im)
 W, H = im.size
 w, h = d.textsize(name, font=font)
 print(w, h)
-d.text(((((W-w)/2) + 50, ((H - h)/2) + 85)),
+d.text(((((W-w)/2) + 40, ((H - h)/2) + 85)),
        name, fill=(56, 56, 56), font=font)
 if st.button("Get Certificate"):
     ioData = io.BytesIO()
@@ -56,6 +56,7 @@ if st.button("Get Certificate"):
     finalImage = ioData.getvalue()
     st.image(finalImage)
 
+st.text('If you are facing any issues, email: xteam.codewavehub@lords.ac.in')
 hide_streamlit_style = """
             <style>
             #MainMenu {visibility: hidden;}
