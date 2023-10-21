@@ -47,12 +47,9 @@ d = ImageDraw.Draw(im)
 
 W, H = im.size
 w, h = d.textsize(name, font=font)
-e_w, e_h = d.textsize(events, font=font)
 print(w, h)
 d.text(((((W-w)/2) + 105, ((H - h)/2) + 350)),
        name, fill=(56, 56, 56), font=font)
-d.text(((((W-e_w)/2) - 850, ((H - e_h)/2) + 580)),
-       events, fill=(56, 56, 56), font=font)
 if st.button("Get Certificate"):
     ioData = io.BytesIO()
     im.save(ioData, format='PNG', quality='keep')
