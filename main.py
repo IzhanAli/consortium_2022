@@ -27,7 +27,7 @@ events_data = {
 
 #api = "https://api.npoint.io/0ac056978990354196e5"
 
-A = "./day1.png"
+A = "./certificate.png"
 B = "./day2.png"
 # options = []
 # for i in names.keys():
