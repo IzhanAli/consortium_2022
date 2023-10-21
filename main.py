@@ -48,7 +48,7 @@ d = ImageDraw.Draw(im)
 W, H = im.size
 w, h = d.textsize(name, font=font)
 print(w, h)
-d.text(((((W-w)/2) + 105, ((H - h)/2) + 100)),
+d.text(((((W-w)/2) + 90, ((H - h)/2) + 95)),
        name, fill=(56, 56, 56), font=font)
 if st.button("Get Certificate"):
     ioData = io.BytesIO()
